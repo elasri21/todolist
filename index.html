@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
+    <link id="link" rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.js" integrity="sha512-zYXldzJsDrNKV+odAwFYiDXV2Cy37cwizT+NkuiPGsa9X1dOz04eHvUWVuxaJ299GvcJT31ug2zO4itXBjFx4w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Frontend Mentor | Todo app</title>
+</head>
+<body>
+    <div id="main">
+        <header>
+            <h1>Todo</h1>
+            <div class="toggle moon"><img src="images/icon-moon.svg" alt="moon"></div>
+            <div class="toggle sun"><img src="images/icon-sun.svg" alt="sun"></div>
+        </header>
+        <div class="field">
+            <span class="circle"></span>
+            <input type="text" id="field" placeholder="Create a new todo...">
+        </div>
+        <div class="list-container">
+            <div class="list">
+            </div>
+            <div class="buttons">
+                <div class="items-left"><span class="num">0</span> items left</div>
+                <div class="show-items">
+                    <button class="all">All</button>
+                    <button class="active">Active</button>
+                    <button class="completed">Completed</button>
+                </div>
+                <div class="clear-items">
+                    <button class="clear-completed">Clear Completed</button>
+                </div>
+            </div>
+        </div>
+        <p class="drag-drop">Drag and drop to reorder list</p>
+    </div>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+      <script>
+          const dragarea = document.querySelector(".list")
+          new Sortable(dragarea, {
+              Animation: 350
+          })
+      </script>
+    <script src="main.js"></script>
+</body>
+</html>
