@@ -87,12 +87,7 @@ $(document).ready(function(){
         moon.style.display = 'block'
         link.setAttribute('href', 'style.css')
         
-    })
-
-
-    
-    
-
+    });
     // update thenumber of item in the list
 });  //end of ready function
 

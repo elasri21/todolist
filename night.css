@@ -12,7 +12,7 @@ body {
 }
 
 #main {
-  max-width: 1440px;
+  /* max-width: 1440px; */
   background-color: hsl(235, 21%, 11%);
   background-image: url("images/bg-desktop-dark.jpg");
   background-repeat: no-repeat;
@@ -21,14 +21,15 @@ body {
   padding-bottom: 40px;
   height: 100%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   #main {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     padding-top: 50px;
-    max-width: 375px;
+    /* max-width: 375px; */
     background-image: url("images/bg-mobile-dark.jpg");
     background-repeat: no-repeat;
+    background-size: 100%;
   }
 }
 #main > * {
@@ -37,7 +38,7 @@ body {
   margin-right: auto;
   /* border: 1px solid black; */
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   #main > * {
     width: 100%;
   }
@@ -48,7 +49,7 @@ header {
   align-items: center;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   header {
     margin-bottom: 20px;
   }
@@ -92,7 +93,7 @@ h1 {
   padding: 0 15px 15px 15px;
   margin-bottom: 40px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .list-container {
     background-color: none;
     padding-left: 0;
@@ -103,7 +104,7 @@ h1 {
 .list {
   width: 100%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .list {
     background-color: hsl(235, 24%, 19%);
     padding-left: 15px;
@@ -146,7 +147,7 @@ h1 {
   justify-content: space-between;
   align-items: center;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .buttons {
     position: relative;
     padding-left: 15px;
@@ -180,7 +181,7 @@ button:last-child {
 .all {
   color: hsl(220, 98%, 61%);
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767px) {
   .show-items {
     position: absolute;
     bottom: -80px;
